@@ -1,0 +1,17 @@
+extends layout.pug 
+
+block content 
+  div(class='row justify-content-center')
+    h1 Sign Up
+  h6 Name
+  input(placeholder='Name')
+  h6 Password
+  input(placeholder='Password')
+  h6 Confirm Password
+  input(placeholder='Confirm Password')
+  h6 Email (please use your Illinois account)
+  input(placeholder='Email')
+  h6 Major
+  select(name='College')
+    for val in ['Agricultural, Consumer, and Environmental Sciences (ACES)', 'Applied Health Sciences (AHS)',  ]
+      option= i

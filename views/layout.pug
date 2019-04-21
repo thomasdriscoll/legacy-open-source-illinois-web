@@ -1,0 +1,35 @@
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="keywords" content="Open source club info")
+    meta(name="description" content="A web application that provides info on Open Source @ illinois club activities")
+    //- <!-- Tab Icon info  -->
+    title=header
+    //- <!--- CSS styling (for later)-->
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet")
+    link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata")
+    link(rel="stylesheet" type="text/css" href="/stylesheets/style.css")
+  body
+    nav(class="navbar navbar-expand-lg navbar-light")
+      button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        img(class='navbar-toggler-icon' src="/images/at_symbol.jpeg" width="30" height="30" alt="")
+
+      div(class="collapse navbar-collapse" id="navbarSupportedContent")
+        ul(class="navbar-nav ml-auto")
+          li(class='nav-item')
+            a(href='/join' class='nav-link nav_item') Join Today!      
+          li(class="nav-item active")
+            a(href='/' class="nav-link nav_item" style="color:limegreen") Home
+          li(class='nav-item')
+            a(class='nav-link nav_item' style="color:limegreen") About
+          li(class="nav-item")
+            a(class="nav-link nav_item") Projects
+          li(class='nav-item')
+            a(href='/members' class='nav-link nav_item') Members
+        form(class="form-inline")
+          input(class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search")
+          button(class="btn btn-outline-success my-2 my-sm-0" type="submit") Search
+    br 
+    div(class='container')
+      block content
