@@ -16,9 +16,12 @@ app.get('/', (req, res) => {
 });
 //Render login page
 app.get('/join', (req,res) =>{
-  res.render('join', {header: 'Sign Up'})
+  res.render('join', {header: 'Sign Up'});
 });
 app.get('/members', (req,res) =>{
-  res.render('members', {header: 'Members'})
+  res.render('members', {header: 'Members'});
 });
+app.get('/about', (req,res)=>{
+  res.render('about', {header:'About'});
+})
 app.listen(port, () => console.log(`Listening on port ${port}`));

@@ -17,8 +17,16 @@ body{
 }
 .nav_item{
   color:limegreen !important;
-  font-size: 16px !important; 
+  font-size: 16px !important;
 }
 .page_header{
   font-size: 36px;
+}
+
+.add_skill_set{
+  background:none !important;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
 }
